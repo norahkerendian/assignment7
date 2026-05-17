@@ -1,0 +1,7 @@
+stages:
+  transform:
+    cmd: python scripts/transform.py
+    deps:
+    - data/clean/events.csv
+    outs:
+    - data/transformed/events.csv
