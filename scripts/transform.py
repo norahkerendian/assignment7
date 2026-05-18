@@ -14,6 +14,8 @@ def main():
 
     # Add date column (YYYY-MM-DD)
     df["date"] = df["timestamp"].dt.strftime("%Y-%m-%d")
+    # Reformat timestamp back to ISO 8601
+    df["timestamp"] = df["timestamp"].dt.strftime("%Y-%m-%dT%H:%M:%S")
 
     # Ensure output directory exists
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

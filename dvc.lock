@@ -22,17 +22,17 @@ stages:
     outs:
     - path: data/transformed/events.csv
       hash: md5
-      md5: 807ee82f3aa315c3de9d4df6831c1465
+      md5: db53b452a49c9b91edb738c25904bc04
       size: 12505
   features:
     cmd: python scripts/features.py
     deps:
     - path: data/transformed/events.csv
       hash: md5
-      md5: 807ee82f3aa315c3de9d4df6831c1465
+      md5: db53b452a49c9b91edb738c25904bc04
       size: 12505
     outs:
     - path: data/features/events.csv
       hash: md5
-      md5: 041f0504b009b0cd3c4b515b8229d97c
+      md5: 521dc754fb21d343d4625f4598551202
       size: 18518
