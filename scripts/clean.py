@@ -28,6 +28,8 @@ def main():
     df = df.dropna(subset=["timestamp"])
     df["timestamp"] = df["timestamp"].dt.strftime("%Y-%m-%dT%H:%M:%S")
 
+    df['duration_seconds'] = int(df['duration_seconds'])
+
     # Ensure output directory exists
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
